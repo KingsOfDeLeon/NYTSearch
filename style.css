@@ -1,0 +1,45 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: navy;
+    color: white;
+    font-size: 40px;
+    margin: 1px 10px 0px 10px;
+    font-weight: bold;
+}
+.card-header{
+    font-weight: bold;
+    background: lightgray;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+.card{
+    width: 98.8vw;
+}
+.card1{
+    grid-row: 1;
+}
+.card2{
+    grid-row: 2;
+}
+input{
+    width: 100%;
+}
+input[type=Submit]{
+    width: 8rem;
+}
+input[type=Reset]{
+    width: 8rem;
+}
+select{
+    width: 100%;
+}
+.subRe{
+    margin-top: 1rem;
+}

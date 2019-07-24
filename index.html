@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--CSS Style Sheet-->
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <!-- <script src="./search.js"> </script> -->
+
+    <meta charset="UTF-8">
+    <title>NYT Search</title>
+
+</head>
+
+<body>
+    <!-- CSS Grid Start -->
+    <div class="gridContainer">
+        <div class="header">New York Times Search</div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Search Parameters
+            </div>
+            <form>
+                Search Term:
+                <br>
+                <input type="text" name="term" id="term">
+                <br>
+                Number of Records to Retrive:
+                <br>
+                <select>
+                    <option value="1"> 1 </option>
+                    <option value="2"> 2 </option>
+                    <option value="3"> 3 </option>
+                    <option value="4"> 4 </option>
+                    <option value="5"> 5 </option>
+                    <option value="6"> 6 </option>
+                    <option value="7"> 7 </option>
+                    <option value="8"> 8 </option>
+                    <option value="9"> 9 </option>
+                    <option value="10"> 10 </option>
+                </select>
+                <br>
+                Start Year (Optional):
+                <br>
+                <input type="number" name="start" id="startYear">
+                <br>
+                End Year (Optional):
+                <br>
+                <input type="number" name="end" id="endYear">
+                <br>
+                <input id="srchBtn" type="submit" value="Search">
+                <input type="reset" value="Clear Results">
+            </form>
+        </div>
+        <!-- CSS Grid End -->
+    </div>
+
+
+    <!-- External JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="search.js"></script>
+
+</body>
+
+</html>
